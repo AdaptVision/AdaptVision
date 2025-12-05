@@ -6,7 +6,7 @@ python3 -m verl.trainer.main_ppo \
     algorithm.adv_estimator=dtpo \
     data.prompt_type="image_crop_agent" \
     data.system_prompt="image_crop_agent" \
-    data.train_file=${TRAIN_DATA} \
+    data.train_files=${TRAIN_DATA} \
     data.val_files=${VAL_DATA} \
     data.train_batch_size=512 \
     data.max_prompt_length=8192 \
