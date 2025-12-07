@@ -73,9 +73,9 @@ We provide the evaluation code detail in [`scripts/vllm_adaptvision.py`](scripts
 If you find this project useful in your research, please consider citing:
 
 ```bibtex
-@article{lin2025adapt,
+@article{lin2025adaptvision,
   title={AdaptVision: Efficient Vision-Language Models via Adaptive Visual Acquisition},
-  author={Zichuan Lin and Yicheng Liu and Yang Yang and Lvfang Tao and Deheng Ye},
+  author={Lin, Zichuan and Liu, Yicheng and Yang, Yang and Tao, Lvfang and Ye, Deheng},
   journal={arXiv preprint arXiv:2512.03794},
   year={2025}
 }
