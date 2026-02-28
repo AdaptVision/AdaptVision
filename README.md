@@ -6,7 +6,7 @@
 <a href='https://huggingface.co/AdaptVision/models'><img src='https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Models-blue'></a>
 
 ## Release
-- [x] **[2025.02.21]** AdaptVision is accepted by [CVPR 2026](https://cvpr.thecvf.com/)!
+- [x] **[2026.02.21]** AdaptVision is accepted by [CVPR 2026](https://cvpr.thecvf.com/)!
 - [x] **[2025.11.18]** 🔥 AdaptVision is coming! We release the [project page](https://adaptvision.github.io/), [paper](), [code](https://github.com/AdaptVision/AdaptVision) and [models](https://huggingface.co/AdaptVision/models)!
 
 ## Contents
