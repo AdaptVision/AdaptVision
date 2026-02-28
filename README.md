@@ -1,4 +1,4 @@
-# AdaptVision: Efficient Vision-Language Models via Adaptive Visual Acquisition
+# [CVPR 2026] AdaptVision: Efficient Vision-Language Models via Adaptive Visual Acquisition
 
 
 <a href='https://adaptvision.github.io/'><img src='https://img.shields.io/badge/Project-Page-Green'></a>
