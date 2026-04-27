@@ -11,12 +11,45 @@
 - [x] **[2025.11.18]** 🔥 AdaptVision is coming! We release the [project page](https://adaptvision.github.io/), [paper](), [code](https://github.com/AdaptVision/AdaptVision) and [models](https://huggingface.co/AdaptVision/models).
 
 ## Contents
+- [Inference Demo](#inference-demo)
 - [Installation](#installation)
 - [Train](#train)
 - [Evaluation](#evaluation)
 - [Citation](#citation)
 - [Acknowledgement](#acknowledgement)
 - [License](#license)
+
+## Inference Demo
+
+The full runnable notebook is available in [`cookbooks/adaptvision.ipynb`](cookbooks/adaptvision.ipynb). Below is the same AdaptVision inference demo rendered directly in the README.
+
+**Question:** `Is there a stop sign facing us?`
+
+<p align="center">
+  <img src="assets/adaptvision_demo_bbox.png" width="68%" alt="AdaptVision requests a local region from the global view." />
+  <img src="assets/adaptvision_demo_crop.png" width="27%" alt="High-resolution local crop requested by AdaptVision." />
+</p>
+<p align="center">
+  <em>Global view -> local zoom -> final answer: Yes, there is a stop sign facing us.</em>
+</p>
+
+```python
+# Equivalent to the example in cookbooks/adaptvision.ipynb
+bot = AdaptVision(model_path="AdaptVision/AdaptVision-7B")
+result = bot.run("assets/test_img2.png", "Is there a stop sign facing us?")
+show_result(result)
+```
+
+```text
+--- Round 1 ---
+<think>...I need to zoom in on that area.</think>
+<tool_call>{"name": "request_local_region", "arguments": {"bbox_2d": [418, 189, 440, 214]}}</tool_call>
+
+--- Round 2 ---
+<answer>Yes, there is a stop sign facing us.</answer>
+```
+
+AdaptVision first reasons over a downsampled global image, then requests a high-resolution local crop before producing the final answer. This active-vision loop helps preserve efficiency while recovering small but decisive details.
 
 ## Installation
 
