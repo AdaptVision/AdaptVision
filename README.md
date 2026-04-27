@@ -11,7 +11,7 @@
 - [x] **[2025.11.18]** 🔥 AdaptVision is coming! We release the [project page](https://adaptvision.github.io/), [paper](), [code](https://github.com/AdaptVision/AdaptVision) and [models](https://huggingface.co/AdaptVision/models).
 
 ## Contents
-- [Inference Demo](#inference-demo)
+- [Demo](#inference-demo)
 - [Installation](#installation)
 - [Train](#train)
 - [Evaluation](#evaluation)
@@ -19,9 +19,9 @@
 - [Acknowledgement](#acknowledgement)
 - [License](#license)
 
-## Inference Demo
+## Demo
 
-The full runnable notebook is available in [`cookbooks/adaptvision.ipynb`](cookbooks/adaptvision.ipynb). Below is the same AdaptVision inference demo rendered directly in the README.
+The full runnable notebook is available in [`cookbooks/adaptvision.ipynb`](cookbooks/adaptvision.ipynb).
 
 **Question:** `Is there a stop sign facing us?`
 
